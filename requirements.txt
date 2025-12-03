@@ -1,0 +1,11 @@
+numpy>=1.23,<1.26
+pandas>=1.5,<2.1
+matplotlib>=3.6,<3.8
+seaborn>=0.12,<0.13
+scikit-learn>=1.2,<1.3
+lightgbm>=3.3,<4.0
+optuna>=3.0,<4.0
+shap>=0.41,<0.50
+joblib>=1.2,<2.1
+tensorflow>=2.12,<2.14
+ipykernel
