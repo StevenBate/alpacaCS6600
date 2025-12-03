@@ -65,30 +65,6 @@ def load_merged_df():
         "Alternatively export your merged DataFrame to ./merged_df.csv and re-run."
     )
 
-# --- Optionally, you can copy/paste your Alpaca fetching logic here and call it if CSV absent.
-# I left it commented intentionally so running this file won't accidentally attempt API calls.
-"""
-# # Uncomment and add your Alpaca keys if you want the script to fetch directly:
-# from alpaca.data.historical import StockHistoricalDataClient
-# from alpaca.data.requests import StockBarsRequest, NewsRequest
-# from alpaca.data.timeframe import TimeFrame
-# from alpaca.data.historical.news import NewsClient
-# from datetime import datetime
-#
-# def fetch_from_alpaca():
-#     client = StockHistoricalDataClient('<KEY_ID>', '<SECRET>')
-#     request_params = StockBarsRequest(
-#         symbol_or_symbols=["AAPL"],
-#         timeframe=TimeFrame.Day,
-#         start=datetime.strptime("2022-01-01", '%Y-%m-%d'),
-#         end=datetime.strptime("2023-12-31", '%Y-%m-%d')
-#     )
-#     bars = client.get_stock_bars(request_params)
-#     bars_df = bars.df.copy().reset_index()
-#     # fetch news similarly and merge like in your EDA
-#     return merged_df
-"""
-
 def preprocess_and_engineer(df, debug=False):
     """
     Input: merged_df (as produced by your EDA)
